@@ -29,7 +29,7 @@ This image contains a working disposable-mailbox installation which uses the php
 
 ## Usage
 
-Please note that our image requires a webserver (configured for php-fpm) in front of it, as it only exposes the php files itself. That means you can not run the container by itself. It is higly recommended to use our provided docker-compose file which you can find [right here](https://github.com/konstantingoretzki/disposable-mailbox-docker/blob/master/docker-compose.yml).
+Please note that our image requires a webserver (configured for php-fpm) in front of it, as it only exposes the php files itself. That means you can not run the container by itself. It is highly recommended to use our provided docker-compose file which you can find [right here](https://github.com/konstantingoretzki/disposable-mailbox-docker/blob/master/docker-compose.yml).
 
 To get everything up and running, just follow these steps:
 
@@ -41,7 +41,7 @@ cd disposable-mailbox-docker
 docker-compose up -d
 ```
 
-You should then be able to access the installation at http://yourip:80
+You should then be able to access the installation at http://yourIP:80
 
 ## Config
 
