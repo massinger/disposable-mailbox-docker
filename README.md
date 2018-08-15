@@ -1,4 +1,4 @@
-# Lychee + Docker
+# disposable-mailbox + Docker
 
 [![Docker Stars](https://img.shields.io/docker/stars/kolex/disposable-mailbox.svg?style=flat-square)](https://hub.docker.com/r/kolex/disposable-mailbox/)
 [![Docker Pulls](https://img.shields.io/docker/pulls/kolex/disposable-mailbox.svg?style=flat-square)](https://hub.docker.com/r/kolex/disposable-mailbox/)
