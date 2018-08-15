@@ -1,0 +1,29 @@
+---
+version: '3'
+services:
+  nginx:
+    image: nginx:1.15.2-alpine
+    networks:
+      - internal
+    ports:
+      - 80:80
+    volumes:
+      - "php-storage:/var/www/html"
+      - ./src/nginx.conf:/etc/nginx/conf.d/default.conf
+    depends_on:
+      - disposable-mailbox
+
+  disposable-mailbox:
+    image: kolex/disposable-mailbox:0.2.1
+    container_name: disposable-mailbox-container
+    volumes:
+      - "./src/config.php:/var/config.php"
+      - "php-storage:/var/www/html"
+    networks:
+      - internal
+
+volumes:
+  php-storage:
+
+networks:
+  internal:
