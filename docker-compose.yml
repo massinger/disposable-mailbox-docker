@@ -2,7 +2,7 @@
 version: '3'
 services:
   nginx:
-    image: nginx:1.15.2-alpine
+    image: nginx:1.15.3-alpine
     container_name: nginx-disposable-mailbox
     networks:
       - internal
