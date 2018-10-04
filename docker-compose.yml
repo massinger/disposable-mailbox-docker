@@ -1,9 +1,10 @@
----
 version: '3'
+
 services:
   nginx:
-    image: nginx:1.15.3-alpine
+    image: nginx:1.15.5-alpine
     container_name: nginx-disposable-mailbox
+    restart: unless-stopped
     networks:
       - internal
     ports:
@@ -17,11 +18,12 @@ services:
   disposable-mailbox:
     image: kolex/disposable-mailbox:0.2.1
     container_name: disposable-mailbox
-    volumes:
-      - ./src/config.php:/var/config.php
-      - php-storage:/var/www/html
+    restart: unless-stopped
     networks:
       - internal
+    volumes:
+      - php-storage:/var/www/html
+      - ./src/config.php:/var/config.php
 
 volumes:
   php-storage:
