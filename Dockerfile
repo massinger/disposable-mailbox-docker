@@ -1,4 +1,4 @@
-FROM php:7.2.9-fpm-alpine3.8
+FROM php:7.2.10-fpm-alpine3.8
 
 LABEL authors="Konstantin Goretzki, Felix Alexa"
 LABEL version="v1.1"
